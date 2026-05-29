@@ -1,16 +1,6 @@
 import json
 tasks=[]#storage..we are using lists so it allows duplicates also
 # LOAD TASK FROM FILE
-"""try:
-    with open("tasks.txt","r") as file:
-        for line in file:
-            tasks.append(eval(line))#here string is converted to dictionary manually
-except FileNotFoundError:
-    pass#you can also print file not found  also,beacuse when app runs first time file not exists or you can use pass statement to continue quietly
-def save_tasks():
-    with open("tasks.txt","w") as file:
-        for z in tasks:
-            file.write(str(z)+"\n")"""
 
 try:
     with open("tasks.json","r") as file:
