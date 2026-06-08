@@ -1,5 +1,5 @@
 import json
-tasks=[]#storage..we are using lists so it allows duplicates also
+tasks=[]#storage...we are using lists so it allows duplicates also
 # LOAD TASK FROM FILE
 
 try:
@@ -23,13 +23,13 @@ while True:#main loop it will be running until user exits the app
     print("5.update task")
     print("6.Exit")
 
-    #Decision making
-    choice=input("enter choice:")#we are using strings if user enters hello means it will be invalid choice,,if we use integer as input means if users enters hello it shows value error..
+    #DecisionMaking
+    choice=input("enter choice:")#we are using strings if user enters hello means it will be invalid choice...if we use integer as input means if users enters hello it shows value error...
 
     #ADD TASK
     if choice == "1":#feature 1
         task = input("enter the task:")
-        tasks.append({    # you can store mutliple pieces of information for each code,but it lists only task name can be stored
+        tasks.append({    # you can store multiple pieces of information for each code,but it lists only task name can be stored
             "title":task,
             "completed":False
         })# if you want to add function separately you can do in between here
@@ -54,7 +54,7 @@ while True:#main loop it will be running until user exits the app
 
     #DELETE TASK
     elif choice == "3":
-        delete_task=int(input("enter the task number:"))#we need to give interger input only because strings cannot be subtracted
+        delete_task=int(input("enter the task number:"))#we need to give integer input only because strings cannot be subtracted
         if 1 <=delete_task<=len(tasks):
             tasks.pop(delete_task-1)#-1 is given because you had started indexing from number 1 instead of 0
             save_tasks()
